@@ -100,8 +100,6 @@ fetch(MY_URL_ALL).then(
                                                                 </div>
                                                             </div>
 
-                                                            <div class='card-footer'>${post.id}</div>
-
                                                             </div>
 
                                                         </div>`;
