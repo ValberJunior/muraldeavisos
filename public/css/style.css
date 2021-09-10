@@ -1,0 +1,28 @@
+
+.bg1{
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+   overflow: hidden;
+   /* position: sticky;
+   top:0;
+   z-index: 1; */
+}
+
+.title{
+    color: #1E2566;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(161, 160, 160);
+    
+}
+
+.icone{
+    width: 90px;
+}
+
+.bg2{
+    background-color: #315CDA;
+}

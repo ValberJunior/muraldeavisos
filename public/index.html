@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Avisos</title>
+    <!--icon-->
+    <link href="./assets/logo.png" rel="icon" type="image/png">
+
+    <!-- CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--My Css-->
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/d2883e7411.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+
+  <!--header--> 
+<header class='P-5 w-100'>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+            <div class="container-fluid">
+
+              <img src="./assets/logo.png" alt="Logo do mural de avisos" width="80"  class="d-inline-block align-text-top" data-aos="zoom-in">
+              <a class="navbar-brand fw-bolder fs-3 p-2">Mural de Avisos</a>
+
+              <!--Button Menu-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!--opts-->
+              <div class="collapse navbar-collapse fs-5 justify-content-end me-2 mt-2" id="navbarNav">
+                <ul class="navbar-nav text-center p-2">
+                  <li class="nav-item p-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#mural">Mural de Avisos</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+</header>  
+<!--SVG--> 
+<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(248, 249, 250, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#F8F9FA" d="M0,96L48,104C96,112,192,128,288,128C384,128,480,112,576,109.3C672,107,768,117,864,112C960,107,1056,85,1152,72C1248,59,1344,53,1440,56C1536,59,1632,69,1728,69.3C1824,69,1920,59,2016,56C2112,53,2208,59,2304,64C2400,69,2496,75,2592,82.7C2688,91,2784,101,2880,96C2976,91,3072,69,3168,66.7C3264,64,3360,80,3456,72C3552,64,3648,32,3744,18.7C3840,5,3936,11,4032,13.3C4128,16,4224,16,4320,34.7C4416,53,4512,91,4608,106.7C4704,123,4800,117,4896,106.7C4992,96,5088,80,5184,69.3C5280,59,5376,53,5472,66.7C5568,80,5664,112,5760,122.7C5856,133,5952,123,6048,109.3C6144,96,6240,80,6336,74.7C6432,69,6528,75,6624,72C6720,69,6816,59,6864,53.3L6912,48L6912,160L6864,160C6816,160,6720,160,6624,160C6528,160,6432,160,6336,160C6240,160,6144,160,6048,160C5952,160,5856,160,5760,160C5664,160,5568,160,5472,160C5376,160,5280,160,5184,160C5088,160,4992,160,4896,160C4800,160,4704,160,4608,160C4512,160,4416,160,4320,160C4224,160,4128,160,4032,160C3936,160,3840,160,3744,160C3648,160,3552,160,3456,160C3360,160,3264,160,3168,160C3072,160,2976,160,2880,160C2784,160,2688,160,2592,160C2496,160,2400,160,2304,160C2208,160,2112,160,2016,160C1920,160,1824,160,1728,160C1632,160,1536,160,1440,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z"></path></svg>
+
+<!--Section1-->
+<section class='container-fluid p-3 pb-5'>
+
+<div class='d-grid'>
+
+ <div class='row justify-content-center align-items-center'> 
+<div class='col-md-6 text-center'>  <img src='./assets/image.png' alt='Desenho informativo' style='width: 80%;'> </div>
+<div class='col-md-6 justify-content-center align-items-center'> <h1 class='display-4 fw-bolder title p-5'>Este é o mural de avisos, Desafio proposto no curso ProgramadorBR</h1>
+<div class=' d-flex justify-content-center align-items-center p-2'><a type='button' href='#sectionNewPost' class='btn btn-primary  btn-lg text-light p-3 fw-bolder fs-5 rounded-pill' style=' width: 250px;' data-aos="zoom-in"> Começar agora   <i class="far fa-hand-point-right"></i></a></div> </div>
+</div>
+
+</div>
+</section>
+
+<!--Section Tecnologies-->
+<section class='bg-info pb-5'>
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgb(255, 255, 255)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#FFFFFF" d="M0,96L240,144L480,96L720,128L960,64L1200,48L1440,80L1680,48L1920,64L2160,80L2400,112L2640,48L2880,96L3120,0L3360,16L3600,16L3840,128L4080,112L4320,64L4560,48L4800,144L5040,112L5280,64L5520,80L5760,48L5760,160L5520,160L5280,160L5040,160L4800,160L4560,160L4320,160L4080,160L3840,160L3600,160L3360,160L3120,160L2880,160L2640,160L2400,160L2160,160L1920,160L1680,160L1440,160L1200,160L960,160L720,160L480,160L240,160L0,160Z"></path></svg>
+<div class='d-flex flex-column justify-content-center align-items-center'>
+<div><h2 class='display-5 fw-bolder p-5 text-light' data-aos="zoom-in-down">Tecnologias Aplicadas</h2></div>
+
+<div class='container-fluid d-flex justify-content-center align-items-center p-4' data-aos="zoom-out-up">
+  <div class='m-2'><img src='./assets/html.png' alt='logo html 5' type='image/png' class='img-fluid icone'></div>
+  <div class='m-2'><img src='./assets/css.png' alt='logo css 3' type='image/png' class='img-fluid icone'></div>
+  <div class='m-2'><img src='./assets/bootstrap.png' alt='logo bootstrap 5' type='image/png' class='img-fluid icone'></div>
+  <div class='m-2'><img src='./assets/javascript.png' alt='logo javascript' type='image/png' class='img-fluid icone'></div>
+  <div class='m-2'><img src='./assets/node-js.png' alt='logo nodejs' type='image/png' class='img-fluid icone'></div>
+</div>
+</div>
+</section>
+
+
+<!--Section New Post-->
+<section class="bg1" id='sectionNewPost' >
+  
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgb(255, 255, 255)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#65CAF1" d="M0,96L240,144L480,96L720,128L960,64L1200,48L1440,80L1680,48L1920,64L2160,80L2400,112L2640,48L2880,96L3120,0L3360,16L3600,16L3840,128L4080,112L4320,64L4560,48L4800,144L5040,112L5280,64L5520,80L5760,48L5760,160L5520,160L5280,160L5040,160L4800,160L4560,160L4320,160L4080,160L3840,160L3600,160L3360,160L3120,160L2880,160L2640,160L2400,160L2160,160L1920,160L1680,160L1440,160L1200,160L960,160L720,160L480,160L240,160L0,160Z"></path></svg>
+
+  <div class='container d-flex flex-column align-items-center justify-content-center p-4 pb-5' data-aos="zoom-in-up">
+          <h3 class='display-5 fw-bolder text-center pb-5 text-light' data-aos="zoom-out-down">Novo Post <i class="fas fa-pencil-alt"></i></h3>
+
+
+          <div style='width: 70%;'>
+
+                    <div class="mb-2">
+                      <label for="title" class="form-label fw-bolder fs-5 text-light">Título do Aviso </label>
+                      <input type="text" class="form-control" id="title" placeholder="Escreva aqui o título do aviso">
+                    </div>
+                    <div class="mb-5">
+                      <label for="description" class="form-label fw-bolder fs-5 text-light">Descrição do Aviso</label>
+                      <textarea class="form-control" id="description" rows="3"  placeholder="Escreva aqui a descrição do aviso"></textarea>
+                    </div>
+
+          </div>
+
+                <button id='button' class='btn btn-info btn-lg text-light rounded-pill p-2' style='width: 200px;'>ADICIONAR  <i class="fas fa-plus-circle"></i></button>
+  </div>
+
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#FFFFFF" d="M0,88L26.7,84.3C53.3,81,107,73,160,75.2C213.3,77,267,88,320,77C373.3,66,427,33,480,27.5C533.3,22,587,44,640,45.8C693.3,48,747,29,800,34.8C853.3,40,907,70,960,84.3C1013.3,99,1067,99,1120,88C1173.3,77,1227,55,1280,51.3C1333.3,48,1387,62,1440,62.3C1493.3,62,1547,48,1600,51.3C1653.3,55,1707,77,1760,86.2C1813.3,95,1867,92,1920,75.2C1973.3,59,2027,29,2080,23.8C2133.3,18,2187,37,2240,38.5C2293.3,40,2347,26,2400,31.2C2453.3,37,2507,62,2560,69.7C2613.3,77,2667,66,2720,64.2C2773.3,62,2827,70,2880,77C2933.3,84,2987,92,3040,84.3C3093.3,77,3147,55,3200,55C3253.3,55,3307,77,3360,82.5C3413.3,88,3467,77,3520,77C3573.3,77,3627,88,3680,84.3C3733.3,81,3787,62,3813,53.2L3840,44L3840,110L3813.3,110C3786.7,110,3733,110,3680,110C3626.7,110,3573,110,3520,110C3466.7,110,3413,110,3360,110C3306.7,110,3253,110,3200,110C3146.7,110,3093,110,3040,110C2986.7,110,2933,110,2880,110C2826.7,110,2773,110,2720,110C2666.7,110,2613,110,2560,110C2506.7,110,2453,110,2400,110C2346.7,110,2293,110,2240,110C2186.7,110,2133,110,2080,110C2026.7,110,1973,110,1920,110C1866.7,110,1813,110,1760,110C1706.7,110,1653,110,1600,110C1546.7,110,1493,110,1440,110C1386.7,110,1333,110,1280,110C1226.7,110,1173,110,1120,110C1066.7,110,1013,110,960,110C906.7,110,853,110,800,110C746.7,110,693,110,640,110C586.7,110,533,110,480,110C426.7,110,373,110,320,110C266.7,110,213,110,160,110C106.7,110,53,110,27,110L0,110Z"></path></svg>
+
+</section> 
+
+
+
+<!--Section Mural-->
+<section class='pt-5' id='mural'>
+<div class="container">
+    
+    <h2 class="text-center display-5 fw-bolder pt-3 pb-5 text-dark" data-aos="zoom-out-down">Mural de Avisos <i class="fas fa-exclamation-triangle text-primary"></i></h2>
+    
+    <!--div que irá receber os posts-->
+    <div class="row row-cols-1 row-cols-md-2 g-4" id="posts" data-aos="fade-up"
+    data-aos-duration="1000">
+
+
+    </div>
+
+</div>
+</section>
+
+<!--SVG-->
+<svg height="100%" width="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,600 C 0,600 0,200 0,200 C 54.45688766746822,172.14153211954655 108.91377533493645,144.2830642390931 180,149 C 251.08622466506355,153.7169357609069 338.8017863277224,191.00927516317418 410,206 C 481.1982136722776,220.99072483682582 535.8790793541739,213.67983510821023 604,200 C 672.1209206458261,186.32016489178977 753.6818962555824,166.27138440398488 820,152 C 886.3181037444176,137.72861559601512 937.393335623497,129.23462727585022 1002,129 C 1066.606664376503,128.76537272414978 1144.7447612504293,136.79010649261423 1220,150 C 1295.2552387495707,163.20989350738577 1367.6276193747854,181.6049467536929 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#315cda88" class="transition-all duration-300 ease-in-out delay-150"></path><path d="M 0,600 C 0,600 0,400 0,400 C 71.49914118859496,361.0099622122982 142.99828237718992,322.01992442459635 213,343 C 283.0017176228101,363.98007557540365 351.5060116798352,444.93026451391273 415,465 C 478.4939883201648,485.06973548608727 536.9776709034696,444.2590175197527 603,412 C 669.0223290965304,379.7409824802473 742.5833047062865,356.0336654070767 809,342 C 875.4166952937135,327.9663345929233 934.6891102713844,323.60632085194084 1003,347 C 1071.3108897286156,370.39367914805916 1148.660254208176,421.54105118515974 1223,435 C 1297.339745791824,448.45894881484026 1368.669872895912,424.2294744074201 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#315cdaff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+
+<!--Footer-->
+<footer class='bg2' style='height: 250px'>
+
+  <div class='d-flex flex-column justify-content-center align-items-center pb-4' data-aos="fade-up"
+  data-aos-anchor-placement="bottom-bottom">
+
+    <div class='d-flex justify-content-center align-items-center pb-5' id='contato'>
+
+      <a href='https://www.linkedin.com/in/valber-junior-238217b4/' class='text-decoration-none display-3 m-2 text-light'><i class="fab fa-linkedin"></i></a>
+      <a href='https://github.com/ValberJunior'class='text-decoration-none display-3 m-2 text-light'><i class="fab fa-github" ></i></a>
+
+
+    </div>
+
+
+    <div class='pt-3' style='border-top: 4px solid white;'>
+      <span class='fw-bolder fs-4 text-light text-center'>Desenvolvido por Valber Júnior <i class="far fa-copyright"></i></span>
+    </div>
+
+  </div>
+
+
+</footer>
+
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+<!--My script-->
+<script src='./script/script.js'></script>
+
+</body>
+</html>
