@@ -12,7 +12,7 @@ AOS.init();
 //Variaveis
 const MY_URL_NEW = "http://192.168.0.2:3000/api/new"
 const MY_URL_ALL = "http://192.168.0.2:3000/api/all"
-const MY_URL_DEL = "http://192.168.0.2:3000/api/all/:id"
+const MY_URL_DEL = "http://192.168.0.2:3000/api/del/:id"
 
 
 //Evento para o botão enviar
@@ -123,11 +123,12 @@ function deleteItem (){
     if(confirmation){
 
         let posts = JSON.parse(json);
+
         posts = posts.filter(post =>{
-            post.id != Element.getAttribute('id');
+            post.id != post.getAttribute('id');
         }) ;
 
-        const options = {method: "DELETE"   };
+        const options = {method: "DELETE"};
 
         fetch(MY_URL_DEL , options).then( res =>{
             console.log(res)});

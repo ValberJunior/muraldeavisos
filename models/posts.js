@@ -13,11 +13,11 @@ newPost(title, description){
 
 },
 
-deletePost(){
+deletePost(id){
+    
     this.posts = this.posts.filter(post =>{
-        post.id != element.getAttribute("id");
+        post.id != id;
     })
-    this.getAll();
 
 },
 

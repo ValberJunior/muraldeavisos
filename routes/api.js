@@ -20,15 +20,21 @@ router.get("/all", (req, res,)=>{
  
  });
 
-//Para deletar
+//Para deletar    << Desenvolvendo
 
-router.delete('/all/:id', function(req, res) {
-    let id = req.params.id;
-    router.db('posts').remove({
-      id: id
-    });
-    return res.status(201).end();
-  });
+router.delete('/del/:id', (req, res) => {
+  
+  console.log(req.params.id);
+  let id = req.params.id;
+
+  posts.deletePost(id);
+
+  res.send("Aviso deletado!")
+  res.json(JSON.stringify(posts.getAll()));
+
+});
+
+
 
  
  //Para Criar um novo post e Salvar dados
