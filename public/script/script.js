@@ -9,12 +9,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 AOS.init();
 
 
-//Variaveis
-const MY_URL_NEW = "http://192.168.0.2:3000/api/new"
-const MY_URL_ALL = "http://192.168.0.2:3000/api/all"
-const MY_URL_DEL = "http://192.168.0.2:3000/api/del/:id"
-
-
 //Evento para o botão enviar
 
 let button = document.getElementById('button');
@@ -55,7 +49,7 @@ function newPost() {
                 };
 
 
-    fetch(MY_URL_NEW , options).then( res =>{
+    fetch('http://192.168.0.2:3000/api/new' , options).then( res =>{
         console.log(res);
         updatePosts();
 
@@ -72,7 +66,7 @@ function newPost() {
 
 function updatePosts(){
 
-fetch(MY_URL_ALL).then(
+fetch('http://192.168.0.2:3000/api/all').then(
         res =>{
             return res.json();
         }
@@ -85,7 +79,7 @@ fetch(MY_URL_ALL).then(
         posts.forEach((post)=>{
                                 //Todo conteudo html que iremos enxergar
                                     let postElement = `     <div class='col'>
-                                                            <div id=${post.id} class="card mb-4">
+                                                            <div class="card mb-4">
 
                                                             <div class='card-header'>
                                                                 <h5 class='card-title'>${post.title}</h5>
@@ -96,7 +90,7 @@ fetch(MY_URL_ALL).then(
                                                                     ${post.description}
                                                                 </div>
                                                                 <div class='d-flex justify-content-end me-2'>
-                                                                <button class='btn btn-primary rounded-circle' onclick='deleteItem(this)'><i class='far fa-trash-alt fs-3'></i></button>
+                                                                <button class='btn btn-primary rounded-circle' id='${post.id}' onclick='deleteItem(this)'><i class='far fa-trash-alt fs-3'></i></button>
                                                                 </div>
                                                             </div>
 
@@ -115,24 +109,22 @@ fetch(MY_URL_ALL).then(
 
 //função deletar aviso:
 
-function deleteItem (){
+function deleteItem (element){
     let confirmation = confirm('Deseja apagar este aviso?')
+
+    let id = element.id;
 
     if(confirmation){
 
-        let posts = JSON.parse(json);
-
-        posts = posts.filter(post =>{
-            post.id != post.getAttribute('id');
-        }) ;
-
         const options = {method: "DELETE"};
 
-        fetch(MY_URL_DEL , options).then( res =>{
-            console.log(res)});
-            updatePosts();
+    //Passo o url junto com o id para ser deletado
+        fetch(`http://192.168.0.2:3000/api/del/${id}` , options).then( res =>{
+            console.log(res);
+            updatePosts();});
+        
         }
         
     }
 
-    
+
